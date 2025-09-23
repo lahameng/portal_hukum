@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
+<meta name="WebPartPageExpansion" content="full" />
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Hukum - BPK Perwakilan Sulawesi Tenggara</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -59,36 +60,11 @@
             letter-spacing: 0.17em;
         }
         
-        /* Typing animation */
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #fcd34d; } /* Amber-300 */
-        }
-        .typing-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            min-height: 44px; /* Reserve space to prevent layout shift */
-        }
-        .typing-animation {
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 4px solid #fcd34d;
-            animation:
-                typing 2.5s steps(17, end) forwards,
-                blink-caret .75s step-end infinite;
-            width: 0; /* Start with no width */
-        }
-
         /* Scrolled Header Style */
         header {
              transition: background-color 0.3s ease-in-out;
         }
-       
+        
     </style>
 </head>
 <body class="bg-emerald-50">
@@ -100,23 +76,20 @@
                 <div class="flex items-center">
                     <i data-lucide="landmark" class="text-amber-300 w-12 h-12 mr-4 transition-colors duration-300"></i>
                     <div id="header-brand-text" class="text-white transition-colors duration-300">
-                        <h1 class="text-lg md:text-xl font-bold tracking-header pr-[-0.17em]">SUBBAGIAN HUKUM</h1>
-                        <p class="text-xs md:text-sm font-light">BPK Perwakilan Sulawesi Tenggara</p>
+                        <h1 class="text-lg md:text-xl font-bold tracking-header pr-[-0.17em]">SMART PORTAL HUKUM</h1>
+                        <p class="text-xs md:text-sm font-light">BPK Perwakilan Provinsi Sulawesi Tenggara</p>
                     </div>
                 </div>
                 <!-- Desktop Navigation -->
                 <nav id="desktop-nav" class="hidden md:flex items-center space-x-6 text-white transition-colors duration-300">
-                    <a href="#profil" class="nav-link active font-semibold py-2 px-3 rounded-md text-sm flex items-center gap-2">
-                        <i data-lucide="user-circle" class="w-4 h-4"></i> Profil
-                    </a>
-                    <a href="#struktur" class="nav-link font-semibold py-2 px-3 rounded-md text-sm flex items-center gap-2">
-                        <i data-lucide="users" class="w-4 h-4"></i> Tim Kerja
+                    <a href="#menu-utama" class="nav-link active font-semibold py-2 px-3 rounded-md text-sm flex items-center gap-2">
+                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i> SMART Hukum
                     </a>
                     <a href="#jdih" class="nav-link font-semibold py-2 px-3 rounded-md text-sm flex items-center gap-2">
                         <i data-lucide="library" class="w-4 h-4"></i> JDIH
                     </a>
-                    <a href="#menu-utama" class="nav-link font-semibold py-2 px-3 rounded-md text-sm flex items-center gap-2">
-                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i> SMART Hukum
+                    <a href="#struktur" class="nav-link font-semibold py-2 px-3 rounded-md text-sm flex items-center gap-2">
+                        <i data-lucide="users" class="w-4 h-4"></i> Tim Kerja
                     </a>
                 </nav>
                 <!-- Mobile Menu Button -->
@@ -131,145 +104,84 @@
         </div>
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="md:hidden hidden bg-emerald-700">
-            <a href="#profil" class="block nav-link active text-white font-semibold py-2 px-4 text-sm">Profil</a>
-            <a href="#struktur" class="block nav-link text-white font-semibold py-2 px-4 text-sm">Tim Kerja</a>
+            <a href="#menu-utama" class="block nav-link active text-white font-semibold py-2 px-4 text-sm">SMART Hukum</a>
             <a href="#jdih" class="block nav-link text-white font-semibold py-2 px-4 text-sm">JDIH</a>
-            <a href="#menu-utama" class="block nav-link text-white font-semibold py-2 px-4 text-sm">SMART Hukum</a>
+            <a href="#struktur" class="block nav-link text-white font-semibold py-2 px-4 text-sm">Tim Kerja</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto p-4 sm:p-6 lg:p-8">
         
-        <!-- Halaman Profil -->
-        <section id="profil" class="page-content">
-            <div class="relative rounded-xl shadow-md overflow-hidden mb-8">
-                <img src="Asset/galeri/hukum.jpeg" 
-                     alt="Gedung Kantor BPK" 
-                     class="absolute inset-0 w-full h-full object-cover"
-                     onerror="this.onerror=null;this.src='https://placehold.co/1200x400/cccccc/ffffff?text=Image+Not+Found';">
-                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div class="relative z-10 px-8 py-20 text-center text-white">
-                    <div class="typing-container">
-                        <h2 class="typing-animation text-3xl font-bold">"KITA MALULO Mi"</h2>
+        <!-- Halaman Menu Utama (SMART HUKUM) -->
+        <section id="menu-utama" class="page-content">
+            <div class="p-8 rounded-xl">
+   
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mt-8">
+                    <!-- Image -->
+                    <div class="lg:w-2/5 text-center">
+                        <img src="Asset/galeri/SMART.PNG" alt="SMART Portal Hukum" class="rounded-lg shadow-xl mx-auto w-full max-w-sm lg:max-w-full">
                     </div>
-                   <br>
-                    <p class="max-w-3xl mx-auto mt-2">
-                    <span class="font-bold text-red-400">K</span><span class="font-bold text-red-400">I</span>nerja, <span class="font-bold text-red-400">T</span><span class="font-bold text-red-400">A</span>ngguh, <span class="font-bold text-sky-400">MA</span>ndiri, <span class="font-bold text-sky-400">L</span>oyalitas, <span class="font-bold text-sky-400">U</span><span class="font-bold text-sky-400">L</span>et, <span class="font-bold text-sky-400">O</span>bjektif, dan <span class="font-bold text-amber-400">M</span>elayani dengan <span class="font-bold text-amber-400">I</span>khlas.</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                <!-- Visi & Misi -->
-                <div class="icon-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center cursor-pointer" data-modal="modal-visi">
-                    <div class="bg-red-500 text-white p-4 rounded-full mb-4">
-                        <i data-lucide="eye" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800">Visi & Misi</h3>
-                    <p class="text-gray-500 mt-2">Menjadi Lembaga Pemeriksa Tepercaya yang Berperan Aktif dalam Mewujudkan ....</p>
-                </div>
-
-                <!-- Tugas Pokok -->
-                <div class="icon-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center cursor-pointer" data-modal="modal-tugas">
-                    <div class="bg-sky-500 text-white p-4 rounded-full mb-4">
-                        <i data-lucide="gavel" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800">Tugas Pokok</h3>
-                    <p class="text-gray-500 mt-2">Melaksanakan pemberian layanan di bidang hukum yang meliputi legislasi, konsultasi,....</p>
-                </div>
-
-                <!-- Kontak -->
-                <div class="icon-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center cursor-pointer" data-modal="modal-kontak">
-                    <div class="bg-amber-400 text-gray-800 p-4 rounded-full mb-4">
-                        <i data-lucide="phone" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800">Hubungi Kami</h3>
-                    <p class="text-gray-500 mt-2">Informasi alamat, nomor telepon, dan email Subbagian Hukum.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="py-12"><hr class="border-emerald-200/60"></div>
-
-        <!-- Halaman Struktur Tim Kerja -->
-        <section id="struktur" class="page-content">
-             <div class="p-8 rounded-xl">
-                <h2 class="text-3xl font-bold text-emerald-800 mb-8 text-center">Struktur Tim Kerja</h2>
-                
-                <!-- Kepala Subbagian -->
-                <div class="flex justify-center mb-12">
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg w-full sm:w-2/3 md:w-1/2 lg:w-1/3">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/zega.jpg" alt="Foto Kepala Subbagian">
-                        <h3 class="text-lg font-bold text-gray-800">Kristianus Zega S.H</h3>
-                        <p class="text-red-600 font-semibold">Kepala Subbagian</p>
-                        <p class="text-gray-500 text-sm mt-2">"Kasubbag Hukum"</p>
-                    </div>
-                </div>
-
-                <!-- Staf Pelaksana -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Team Member Card 1 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/leen.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Kathleen Graciella Panjaitan A.Md.</h3>
-                        <p class="text-amber-500 font-semibold">Staf Pelaksana</p>
-                        <p class="text-gray-500 text-sm mt-2">"Dokumentalis Hukum"</p>
-                    </div>
-                    <!-- Team Member Card 2 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/zia.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Annisa Nur Fauzia S.H.</h3>
-                        <p class="text-amber-500 font-semibold">Staf Pelaksana</p>
-                        <p class="text-gray-500 text-sm mt-2">"Penata Kelola Hukum dan Perundang-undangan"</p>
-                    </div>
-                    <!-- Team Member Card 3 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/agung.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Agung Wijaya Tandirerung S.H.</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
-                    </div>
-                    <!-- Team Member Card 4 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/rizky.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Muhammad Rizky Julyansyah S.H.</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
-                    </div>
-                    <!-- Team Member Card 5 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/kristin.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Kristin Hutabarat S.H., CLA</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
-                    </div>
-                    <!-- Team Member Card 6 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/baidi.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Baidi Meiriadi Habibullah Tarigan S.H., CLA</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
-                    </div>
-                    <!-- Team Member Card 7 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/furi.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Furi Farahdela Fadjrin S.H., CertIA, CLA</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
-                    </div>
-                    <!-- Team Member Card 8 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/fakhrul.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Fakhrul Islam S.H.</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
-                    </div>
-                    <!-- Team Member Card 9 -->
-                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
-                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/arif.jpg" alt="Foto Anggota Tim">
-                        <h3 class="text-lg font-bold text-gray-800">Arif Nooryanda S.H.</h3>
-                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
-                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
+                    <!-- Menu Grid -->
+                    <div class="lg:w-3/5 w-full">
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                            <!-- Menu 1 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-legislasi">
+                                <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="file-stack" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Legislasi, ND, ST, Notula</h3>
+                            </div>
+                            <!-- Menu 2 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-kerjasama">
+                                <div class="bg-green-100 text-green-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="briefcase" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Kerja Sama Kelembagaan</h3>
+                            </div>
+                            <!-- Menu 3 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-perangkat-lunak">
+                                <div class="bg-purple-100 text-purple-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="cpu" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Perangkat Lunak (IK/POS)</h3>
+                            </div>
+                            <!-- Menu 4 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-uji-konsekuensi">
+                                <div class="bg-yellow-100 text-yellow-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="scale" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Uji Konsekuensi, PH, Kajian</h3>
+                            </div>
+                            <!-- Menu 5 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-manajemen-risiko">
+                                <div class="bg-red-100 text-red-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Manajemen Risiko</h3>
+                            </div>
+                            <!-- Menu 6 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-zona-integritas">
+                                <div class="bg-indigo-100 text-indigo-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="shield-check" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Zona Integritas</h3>
+                            </div>
+                            <!-- Menu 7 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-penugasan">
+                                <div class="bg-pink-100 text-pink-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="clipboard-plus" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Penugasan Tambahan</h3>
+                            </div>
+                            <!-- Menu 8 -->
+                            <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-lain-lain">
+                                <div class="bg-gray-100 text-gray-600 p-4 rounded-full mb-4">
+                                    <i data-lucide="more-horizontal" class="w-8 h-8"></i>
+                                </div>
+                                <h3 class="text-base font-semibold text-gray-800">Lain-lain Jurist Sultra</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,68 +213,86 @@
         </section>
         
         <div class="py-12"><hr class="border-emerald-200/60"></div>
+        
+        <!-- Halaman Struktur Tim Kerja -->
+        <section id="struktur" class="page-content">
+             <div class="p-8 rounded-xl">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-8 text-center">Struktur Tim Kerja</h2>
+                
+                <!-- Kepala Subbagian -->
+                <div class="flex justify-center mb-12">
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg w-full sm:w-2/3 md:w-1/2 lg:w-1/3">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/zega.jpg" alt="Foto Kepala Subbagian" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Zega';">
+                        <h3 class="text-lg font-bold text-gray-800">Kristianus Zega S.H</h3>
+                        <p class="text-red-600 font-semibold">Kepala Subbagian</p>
+                        <p class="text-gray-500 text-sm mt-2">"Kasubbag Hukum"</p>
+                    </div>
+                </div>
 
-        <!-- Halaman Menu Utama -->
-        <section id="menu-utama" class="page-content">
-            <div class="p-8 rounded-xl">
-                <h2 class="text-3xl font-bold text-emerald-800 mb-2 text-center">SMART Hukum</h2>
-                <p class="text-center text-gray-500 mb-8">Sistem Monitoring Atas Realisasi Tugas Subbagian Hukum.</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <!-- Menu 1 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-legislasi">
-                        <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
-                            <i data-lucide="file-stack" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Legislasi, ND, ST, Notula</h3>
+                <!-- Staf Pelaksana -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Team Member Card 1 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/leen.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Leen';">
+                        <h3 class="text-lg font-bold text-gray-800">Kathleen Graciella Panjaitan A.Md.</h3>
+                        <p class="text-amber-500 font-semibold">Staf Pelaksana</p>
+                        <p class="text-gray-500 text-sm mt-2">"Dokumentalis Hukum"</p>
                     </div>
-                    <!-- Menu 2 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-kerjasama">
-                        <div class="bg-green-100 text-green-600 p-4 rounded-full mb-4">
-                            <i data-lucide="briefcase" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Kerja Sama Kelembagaan</h3>
+                    <!-- Team Member Card 2 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/zia.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Zia';">
+                        <h3 class="text-lg font-bold text-gray-800">Annisa Nur Fauzia S.H.</h3>
+                        <p class="text-amber-500 font-semibold">Staf Pelaksana</p>
+                        <p class="text-gray-500 text-sm mt-2">"Penata Kelola Hukum dan Perundang-undangan"</p>
                     </div>
-                    <!-- Menu 3 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-perangkat-lunak">
-                        <div class="bg-purple-100 text-purple-600 p-4 rounded-full mb-4">
-                            <i data-lucide="cpu" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Perangkat Lunak (IK/POS)</h3>
+                    <!-- Team Member Card 3 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/agung.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Agung';">
+                        <h3 class="text-lg font-bold text-gray-800">Agung Wijaya Tandirerung S.H.</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
                     </div>
-                    <!-- Menu 4 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-uji-konsekuensi">
-                        <div class="bg-yellow-100 text-yellow-600 p-4 rounded-full mb-4">
-                            <i data-lucide="scale" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Uji Konsekuensi, PH, Kajian</h3>
+                    <!-- Team Member Card 4 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/rizky.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Rizky';">
+                        <h3 class="text-lg font-bold text-gray-800">Muhammad Rizky Julyansyah S.H.</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
                     </div>
-                    <!-- Menu 5 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-manajemen-risiko">
-                        <div class="bg-red-100 text-red-600 p-4 rounded-full mb-4">
-                            <i data-lucide="shield-alert" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Manajemen Risiko</h3>
+                    <!-- Team Member Card 5 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/kristin.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Kristin';">
+                        <h3 class="text-lg font-bold text-gray-800">Kristin Hutabarat S.H., CLA</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
                     </div>
-                    <!-- Menu 6 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-zona-integritas">
-                        <div class="bg-indigo-100 text-indigo-600 p-4 rounded-full mb-4">
-                            <i data-lucide="shield-check" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Zona Integritas</h3>
+                    <!-- Team Member Card 6 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/baidi.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Baidi';">
+                        <h3 class="text-lg font-bold text-gray-800">Baidi Meiriadi Habibullah Tarigan S.H., CLA</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
                     </div>
-                    <!-- Menu 7 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-penugasan">
-                        <div class="bg-pink-100 text-pink-600 p-4 rounded-full mb-4">
-                            <i data-lucide="clipboard-plus" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Penugasan Tambahan</h3>
+                    <!-- Team Member Card 7 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/furi.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Furi';">
+                        <h3 class="text-lg font-bold text-gray-800">Furi Farahdela Fadjrin S.H., CertIA, CLA</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
                     </div>
-                    <!-- Menu 8 -->
-                    <div class="icon-card bg-white p-5 rounded-lg shadow-lg flex flex-col items-center text-center cursor-pointer" data-modal="modal-lain-lain">
-                        <div class="bg-gray-100 text-gray-600 p-4 rounded-full mb-4">
-                            <i data-lucide="more-horizontal" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800">Lain-lain Jurist Sultra</h3>
+                    <!-- Team Member Card 8 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/fakhrul.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Fakhrul';">
+                        <h3 class="text-lg font-bold text-gray-800">Fakhrul Islam S.H.</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
+                    </div>
+                    <!-- Team Member Card 9 -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-lg">
+                        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-emerald-300" src="Asset/tim/arif.jpg" alt="Foto Anggota Tim" onerror="this.onerror=null;this.src='https://placehold.co/112x112/cccccc/ffffff?text=Arif';">
+                        <h3 class="text-lg font-bold text-gray-800">Arif Nooryanda S.H.</h3>
+                        <p class="text-amber-500 font-semibold">Staf Perbantuan</p>
+                        <p class="text-gray-500 text-sm mt-2">"Pemeriksa Ahli Pertama/ Pertama"</p>
                     </div>
                 </div>
             </div>
@@ -371,81 +301,6 @@
     </main>
 
     <!-- Modals -->
-    <!-- Visi & Misi Modal -->
-    <div id="modal-visi" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden modal-backdrop">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl p-8 modal-content transform scale-95">
-            <div class="flex justify-between items-center border-b pb-3 mb-4">
-                <h3 class="text-2xl font-bold text-emerald-800">Visi & Misi BPK RI</h3>
-                <button class="text-gray-500 hover:text-red-600 close-modal">
-                    <i data-lucide="x" class="w-8 h-8"></i>
-                </button>
-            </div>
-            <div>
-                <h4 class="font-semibold text-lg text-gray-700 mt-4">Visi</h4>
-                <p class="text-gray-600 mt-1 text-justify">"Menjadi Lembaga Pemeriksa yang Tepercaya untuk Mewujudkan Pencapaian Tujuan Negara"</p>
-                <h4 class="font-semibold text-lg text-gray-700 mt-4">Misi</h4>
-                <ul class="list-disc list-inside text-gray-600 mt-1 space-y-1">
-                    <li class="text-justify">Memeriksa pengelolaan dan tanggung jawab keuangan negara secara berkualitas dan bermanfaat;</li>
-                    <li class="text-justify">Mendukung pemberantasan korupsi dan penyelesaian ganti kerugian negara/daerah;</li>
-                    <li class="text-justify">Melaksanakan tata kelola organisasi yang bebas, mandiri, transparan, dan akuntabel.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tugas Pokok Modal -->
-    <div id="modal-tugas" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden modal-backdrop">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl p-8 modal-content transform scale-95">
-            <div class="flex justify-between items-center border-b pb-3 mb-4">
-                <h3 class="text-2xl font-bold text-emerald-800">Tugas Pokok Subbagian Hukum</h3>
-                <button class="text-gray-500 hover:text-red-600 close-modal">
-                    <i data-lucide="x" class="w-8 h-8"></i>
-                </button>
-            </div>
-            <div>
-                <p class="text-gray-600 text-justify">Berdasarkan Peraturan BPK No. 1 Tahun 2025, Subbagian Hukum memiliki tugas pokok sebagai berikut:</p>
-                <ul class="list-disc list-inside text-gray-600 mt-1 space-y-1">
-                    <li class="text-justify">Melaksanakan pemberian layanan di bidang hukum yang meliputi legislasi, konsultasi, bantuan dan informasi hukum yang terkait dengan tugas dan fungsi BPK Perwakilan Provinsi Sulawesi Tenggara, serta melaksanakan administrasi manajemen risiko pada lingkup tugas BPK Perwakilan Provinsi Sulawesi Tenggara</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Kontak Modal -->
-    <div id="modal-kontak" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden modal-backdrop">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg p-8 modal-content transform scale-95">
-            <div class="flex justify-between items-center border-b pb-3 mb-4">
-                <h3 class="text-2xl font-bold text-emerald-800">Informasi Kontak</h3>
-                <button class="text-gray-500 hover:text-red-600 close-modal">
-                    <i data-lucide="x" class="w-8 h-8"></i>
-                </button>
-            </div>
-            <div>
-                <div class="flex items-start mt-4">
-                    <i data-lucide="map-pin" class="w-6 h-6 text-emerald-800 mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-semibold">Alamat</h4>
-                        <p class="text-gray-600">BPK Sultra Lantai 1 - Jl. Sao Sao No. 10, Kendari, Sulawesi Tenggara</p>
-                    </div>
-                </div>
-                 <div class="flex items-start mt-4">
-                    <i data-lucide="phone" class="w-6 h-6 text-emerald-800 mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-semibold">Telepon</h4>
-                        <p class="text-gray-600">(0401) 3129403, (+62) 812-1682-7435</p>
-                    </div>
-                </div>
-                 <div class="flex items-start mt-4">
-                    <i data-lucide="mail" class="w-6 h-6 text-emerald-800 mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-semibold">Email</h4>
-                        <p class="text-gray-600">hukum.sultra@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- NEW MODALS FOR MENU UTAMA -->
     <!-- Legislasi Modal -->
     <div id="modal-legislasi" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden modal-backdrop">
@@ -464,11 +319,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Surat Keputusan</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
-                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Surat Edaran</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
-                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Nota Dinas</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
-                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Surat Tugas</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
-                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Notula</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Surat Keputusan</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F01%2E%20KEPUTUSAN%20KEPALA%20PERWAKILAN" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Surat Edaran</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F02%2E%20SURAT%20EDARAN%20KEPALA%20PERWAKILAN" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Nota Dinas</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/hukum/Nota%20Dinas/Forms/AllItems.aspx" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Surat Tugas</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/hukum/Surat%20Tugas/Forms/AllItems.aspx" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Notula</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/hukum/Notula/Forms/AllItems.aspx" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -488,7 +343,7 @@
                 <div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="graduation-cap" class="w-12 h-12 text-emerald-700 mx-auto mb-4"></i><h3 class="font-bold text-lg">Akademisi & Universitas</h3><p class="text-gray-600 text-sm mt-2">Melibatkan akademisi dalam kajian dan riset.</p></div>
             </div>
             <div class="mt-8 text-center">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
+                <a href="https://portal.bpk.go.id/sites/kendari/hukum/MOU%20%20NASKAH%20KESEPAHAMAN/Forms/AllItems.aspx" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
                     <i data-lucide="archive" class="w-5 h-5 mr-2"></i>
                     Data M.o.U/Naskah Kesepahaman
                 </a>
@@ -502,7 +357,11 @@
                 <h3 class="text-2xl font-bold text-emerald-800">Perangkat Lunak (IK/POS)</h3>
                 <button class="text-gray-500 hover:text-red-600 close-modal"><i data-lucide="x" class="w-8 h-8"></i></button>
             </div>
-            <div class="overflow-x-auto"><table class="min-w-full"><thead class="bg-emerald-700 text-white"><tr><th class="py-2 px-4 border-b text-left">Jenis Perangkat Lunak</th><th class="py-2 px-4 border-b text-left">Pengesahan/Penandatangan</th><th class="py-2 px-4 border-b text-center">Aksi</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Prosedur Operasional Standar (POS)</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr><tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Instruksi Kerja (IK)</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr><tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Juklak</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr><tr class="hover:bg-gray-50"><td class="py-3 px-4 border-b">Juknis</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="#" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr></tbody></table></div>
+            <div class="overflow-x-auto"><table class="min-w-full"><thead class="bg-emerald-700 text-white"><tr><th class="py-2 px-4 border-b text-left">Jenis Perangkat Lunak</th><th class="py-2 px-4 border-b text-left">Pengesahan/Penandatangan</th><th class="py-2 px-4 border-b text-center">Aksi</th></tr></thead><tbody><tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 border-b">Prosedur Operasional Standar (POS)</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F14%2E%20POS%20%28Prosedur%20Operasional%20Standar%29" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr><tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 border-b">Instruksi Kerja (IK)</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F03%2E%20INSTRUKSI%20KEPALA%20PERWAKILAN" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr><tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 border-b">Juklak</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F15%2E%20PETUNJUK%20PELAKSANAAN%20%28JUKLAK%29" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr><tr class="hover:bg-gray-50">
+            <td class="py-3 px-4 border-b">Juknis</td><td class="py-3 px-4 border-b">Kepala Perwakilan</td><td class="py-3 px-4 border-b text-center"><a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F16%2E%20PETUNJUK%20TEKNIS%20%28JUKNIS%29" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-semibold hover:underline"><i data-lucide="eye" class="w-4 h-4 mr-1"></i>Lihat</a></td></tr></tbody></table></div>
         </div>
     </div>
     <!-- Uji Konsekuensi Modal -->
@@ -530,7 +389,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
+                <a href="https://portal.bpk.go.id/sites/kendari/hukum/PERMINTAAN%20INFORMASI%20PUBLIK/Forms/AllItems.aspx" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
                     <i data-lucide="archive" class="w-5 h-5 mr-2"></i>
                     Data Permintaan Informasi Publik
                 </a>
@@ -546,7 +405,7 @@
             </div>
              <p class="text-center text-gray-500 mb-8 max-w-3xl mx-auto">Implementasi manajemen risiko di Subbagian Hukum merupakan bagian integral dari upaya pembangunan Zona Integritas. Kami secara proaktif mengidentifikasi, menganalisis, dan memitigasi risiko.</p><div class="grid grid-cols-1 md:grid-cols-3 gap-6"><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="flag" class="w-12 h-12 text-emerald-700 mx-auto mb-4"></i><h3 class="font-bold text-lg">Penetapan Konteks</h3><p class="text-gray-600 text-sm mt-2">Menetapkan sasaran strategis dan ruang lingkup.</p></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="search" class="w-12 h-12 text-emerald-700 mx-auto mb-4"></i><h3 class="font-bold text-lg">Identifikasi Risiko</h3><p class="text-gray-600 text-sm mt-2">Mengidentifikasi potensi risiko kegagalan dan fraud.</p></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="sliders-horizontal" class="w-12 h-12 text-emerald-700 mx-auto mb-4"></i><h3 class="font-bold text-lg">Pengendalian & Mitigasi</h3><p class="text-gray-600 text-sm mt-2">Merancang tindakan pengendalian untuk meminimalkan risiko.</p></div></div>
             <div class="mt-8 text-center">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
+                <a href="https://portal.bpk.go.id/sites/kendari/hukum/MANAJEMEN%20RISIKO/Forms/AllItems.aspx" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
                     <i data-lucide="archive" class="w-5 h-5 mr-2"></i>
                     Data Manajemen Risiko
                 </a>
@@ -562,7 +421,7 @@
             </div>
              <p class="text-center text-gray-500 mb-8 max-w-3xl mx-auto">Kami berkomitmen penuh untuk mewujudkan Wilayah Bebas dari Korupsi (WBK) dan Wilayah Birokrasi Bersih dan Melayani (WBBM) melalui implementasi 6 area perubahan.</p><div class="grid grid-cols-2 md:grid-cols-3 gap-8"><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="recycle" class="w-16 h-16 text-emerald-700 mx-auto"></i><h4 class="font-semibold mt-2">Manajemen Perubahan</h4></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="clipboard-list" class="w-16 h-16 text-emerald-700 mx-auto"></i><h4 class="font-semibold mt-2">Penataan Tatalaksana</h4></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="user-cog" class="w-16 h-16 text-emerald-700 mx-auto"></i><h4 class="font-semibold mt-2">Penataan Manajemen SDM</h4></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="check-circle" class="w-16 h-16 text-emerald-700 mx-auto"></i><h4 class="font-semibold mt-2">Penguatan Akuntabilitas</h4></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="shield-check" class="w-16 h-16 text-emerald-700 mx-auto"></i><h4 class="font-semibold mt-2">Penguatan Pengawasan</h4></div><div class="bg-slate-50 p-6 rounded-lg text-center shadow-sm"><i data-lucide="gem" class="w-16 h-16 text-emerald-700 mx-auto"></i><h4 class="font-semibold mt-2">Peningkatan Kualitas Pelayanan</h4></div></div>
             <div class="mt-8 text-center">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
+                <a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2FZI%20WBBM" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">
                     <i data-lucide="archive" class="w-5 h-5 mr-2"></i>
                     Data ZI
                 </a>
@@ -576,7 +435,11 @@
                 <h3 class="text-2xl font-bold text-emerald-800">Penugasan Tambahan</h3>
                 <button class="text-gray-500 hover:text-red-600 close-modal"><i data-lucide="x" class="w-8 h-8"></i></button>
             </div>
-             <p class="text-center text-gray-500 mb-8 max-w-3xl mx-auto">Personel Subbagian Hukum juga mengemban berbagai penugasan tambahan untuk mendukung kelancaran fungsi organisasi.</p><ul class="space-y-3"><li><a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "><i data-lucide="file-check-2" class="w-5 h-5 mr-3 text-emerald-600"></i><span class="flex-1 ms-3 whitespace-nowrap">Set-Task Force MTP</span></a></li><li><a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "><i data-lucide="file-check" class="w-5 h-5 mr-3 text-emerald-600"></i><span class="flex-1 ms-3 whitespace-nowrap">Set-Tim Reviu Opini</span></a></li><li><a href="#" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "><i data-lucide="gavel" class="w-5 h-5 mr-3 text-emerald-600"></i><span class="flex-1 ms-3 whitespace-nowrap">Agenda Sidang/Bantuan Hukum</span></a></li></ul>
+             <p class="text-center text-gray-500 mb-8 max-w-3xl mx-auto">Personel Subbagian Hukum juga mengemban berbagai penugasan tambahan untuk mendukung kelancaran fungsi organisasi.</p>
+                <ul class="space-y-3">
+                    <li><a href="https://portal.bpk.go.id/sites/kendari/hukum/PENUGASAN%20TAMBAHAN/Forms/AllItems.aspx" target="_blank" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "><i data-lucide="file-check-2" class="w-5 h-5 mr-3 text-emerald-600"></i><span class="flex-1 ms-3 whitespace-nowrap">Set-Task Force MTP</span></a></li>
+                    <li><a href="https://portal.bpk.go.id/sites/kendari/hukum/PENUGASAN%20TAMBAHAN/Forms/AllItems.aspx" target="_blank" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "><i data-lucide="file-check" class="w-5 h-5 mr-3 text-emerald-600"></i><span class="flex-1 ms-3 whitespace-nowrap">Set-Tim Reviu Opini</span></a></li>
+                    <li><a href="https://portal.bpk.go.id/sites/kendari/hukum/PENUGASAN%20TAMBAHAN/Forms/AllItems.aspx" target="_blank" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow "><i data-lucide="gavel" class="w-5 h-5 mr-3 text-emerald-600"></i><span class="flex-1 ms-3 whitespace-nowrap">Agenda Sidang/Bantuan Hukum</span></a></li></ul>
         </div>
     </div>
     <!-- Lain-lain Modal -->
@@ -589,7 +452,7 @@
             <p class="text-center text-gray-600">Repository ini berisi berbagai dokumen pendukung, materi relevan, dan galeri kegiatan lainnya.</p>
              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                 <a href="#" class="bg-slate-50 p-6 rounded-lg flex items-center gap-4 hover:shadow-md transition-shadow"><i data-lucide="file-text" class="w-8 h-8 text-red-500"></i><div><h4 class="font-semibold">Materi Sosialisasi</h4><p class="text-xs text-gray-500">Kumpulan presentasi.</p></div></a>
-                 <a href="#" class="bg-slate-50 p-6 rounded-lg flex items-center gap-4 hover:shadow-md transition-shadow"><i data-lucide="book-open" class="w-8 h-8 text-sky-500"></i><div><h4 class="font-semibold">Laporan Rutin</h4><p class="text-xs text-gray-500">Laporan kinerja.</p></div></a>
+                 <a href="https://portal.bpk.go.id/sites/kendari/Subag%20Hukum/Forms/AllItems.aspx?id=%2Fsites%2Fkendari%2FSubag%20Hukum%2F11%2E%20LAPORAN%20LAYANAN%20SUBBAG%20HUKUM" target="_blank" class="bg-slate-50 p-6 rounded-lg flex items-center gap-4 hover:shadow-md transition-shadow"><i data-lucide="book-open" class="w-8 h-8 text-sky-500"></i><div><h4 class="font-semibold">Laporan Rutin</h4><p class="text-xs text-gray-500">Laporan kinerja.</p></div></a>
                 <a href="#" class="bg-slate-50 p-6 rounded-lg flex items-center gap-4 hover:shadow-md transition-shadow"><i data-lucide="camera" class="w-8 h-8 text-amber-500"></i><div><h4 class="font-semibold">Galeri Kegiatan</h4><p class="text-xs text-gray-500">Dokumentasi foto/video.</p></div></a>
              </div>
         </div>
@@ -688,8 +551,8 @@
                         if(activeLink) {
                             activeLink.classList.add('active');
                              if (window.scrollY > 50) {
-                                activeLink.classList.add('scrolled-active');
-                            }
+                                 activeLink.classList.add('scrolled-active');
+                             }
                         }
                     }
                 });
